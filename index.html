@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwrod Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body id="body">
+    <h1>Paste a password, secret message or private link below.</h1>
+    <p class="lead">Keep sensitive info out of your email and chat logs.</p>
+    <div class="container">
+        <div class="alert">Copied to clipboard</div>
+        Complexity : 
+        <div class="parent">
+            <div class="child">LOW</div>
+            <div class="child">MEDIUM</div>
+            <div class="child">HIGH</div>
+        </div>
+
+        <div class="generate">
+            <i class='bx bxs-pencil'></i> Generate
+        </div>
+    </div>
+
+    <textarea name="area" id="output" cols="50" rows="5" placeholder="Here goes your password..."></textarea>
+
+    <button id="btn"><i class='bx bx-copy-alt'></i> Copy</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

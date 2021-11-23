@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-primary: #d9002d;
+    --color-positive:  #21ba45;
+    --color-info: #0051ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 50%;
+    height: 110px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 12px rgba(0,0,0,0.3);
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 7px 9px rgba(0,0,0,0.5);
+    margin: 0 0.5rem;
+    line-height: 21px;
+    border-radius: 6px;
+}
+
+
+.child {
+    cursor: pointer;
+    display: block;
+    padding: 0.4rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.1s ease-in;
+    line-height: 21px;
+}
+.child:first-child{
+    border-radius: 6px 0 0 6px;
+}
+.child:last-child{
+    border-radius: 0 6px 6px 0;
+}
+
+.low {
+    background-color: #d9002d;
+    color: #FFF;
+}
+
+.medium {
+    background-color: var(--color-positive);
+    color: #FFF;
+}
+.high {
+    background-color: var(--color-info);
+    color: #FFF;
+}
+
+.child:hover {
+    opacity: 0.9;
+}
+
+.active.child:hover {
+    opacity:0.8;
+}
+
+.active {
+    background-color: green;
+    color: #FFF;
+
+}
+
+.generate {
+    margin: 2rem;
+    font-size: 1rem;
+    box-shadow: 5px 7px 8px rgba(0,0,0,0.6);
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.generate:hover {
+    background-color: rgba(208, 210, 214);
+}
+
+textarea {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem;
+    border-radius: 6px;
+    padding: 1rem;
+}
+textarea:focus {
+    outline: none;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.lead {
+    color: rgb(97,97,97);
+    padding: 1rem;
+}
+
+#btn {
+    background-color: var(--color-info);
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.alert {
+    position: absolute;
+    top: -400px;
+    transform: translateY(0);
+    background-color: var(--color-info);
+    padding: 1rem;
+    border-radius: 4px;
+    color: white;
+    transition: 0.5s ease-in;
+}
